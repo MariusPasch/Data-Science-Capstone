@@ -1,0 +1,34 @@
+---
+title: "Data Science Capstone Final Project"
+author: "MariusPasch"
+date: "2022-11-23"
+output: slidy_presentation
+---
+
+## Predictor Presentation
+
+### Introduction
+
+> This slide is for the final project of the Coursera Data Science Capstone Course. The project is about building a predictive model to recommend the next best word given some input word(s).
+
+>The model was built using R and developed into a Shiny application running on shinyapps.io.
+
+
+
+## Predictive Word Model - Methodology
+
+>The model is trained on data provided by SwiftKey on blogs, news and twitter. The US language data provided was 556MB, the model is trained on only 1% sample.
+
+>The model adapts a set of n-grams (a contiguous sequence of n items from a given sample of text or speech) to make an prediction on the next likely word. The model proritises results in the order from quadgram, trigram and bigram, if no results were found then it will revert back to the word “the” as it is the most common term.
+
+## Shiny Application - User Guide
+
+> * The Shiny Application is available in this [link]( https://mariuspasch.shinyapps.io/shiny_app/)
+ * The initial interface has a textbox for input on the left, as well as a “NULL” value for output on the right
+ * The user can enter into the textbox on the left and the model will automatically output on the right
+
+## Reference
+
+>Shiny Application:  https://mariuspasch.shinyapps.io/shiny_app/
+
+>Github Repository: hhttps://github.com/MariusPasch/Data-Science-Capstone.git
